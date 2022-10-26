@@ -8,7 +8,7 @@ const path = require('path');
 const socket = require("socket.io");
 //require('dotenv').config({ path: path.resolve(__dirname, './.env') });
 
-const Port = process.env.PORT || 5000;
+var port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
@@ -30,7 +30,7 @@ mongoose.connect("mongodb+srv://admin-umesh:test123@cluster0.7lqoe.mongodb.net/s
     console.log(err.message);
 });
 
-const server = app.listen(Port, ()=>{
+const server = app.listen(port, ()=>{
     console.log("Server Started on Port");
 });
 
