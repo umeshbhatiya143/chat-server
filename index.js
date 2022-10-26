@@ -6,7 +6,7 @@ const messageRoute = require("./routes/messagesRoute");
 const app = express();
 const path = require('path');
 const socket = require("socket.io");
-//require('dotenv').config({ path: path.resolve(__dirname, './.env') });
+require('dotenv').config({ path: path.resolve(__dirname, './.env') });
 
 var port = process.env.PORT || 5000;
 
