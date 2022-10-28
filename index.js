@@ -51,7 +51,7 @@ app.get('/',(req, res) => {
 //setup socket server
 const io = socket(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://localhost:3000",
         Credentials: true,
     },
 });
